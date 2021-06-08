@@ -8,8 +8,10 @@
 class CurrentConditions : public Observer, public DisplayElement {
 public:
 	CurrentConditions(Observable* observable);
+	
 	void update(Observable* observable);
 	void display();
+
 private:
 	Observable* observable;
 	int temperature, humity, pressure;

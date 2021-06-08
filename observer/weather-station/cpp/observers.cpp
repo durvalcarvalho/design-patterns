@@ -10,7 +10,7 @@ CurrentConditions::CurrentConditions(Observable* obs) {
 }
 
 void CurrentConditions::update(Observable* observable) {
-	WeatherData* wd = (WeatherData*) observable;
+	WeatherData* wd = (x) observable;
 	temperature = wd->getTemperature();
 	humity = wd->getHumidy();
 	pressure = wd->getPressure();
